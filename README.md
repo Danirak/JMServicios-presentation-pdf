@@ -1,5 +1,9 @@
 # 📄 Plantilla de Presentación PDF con LaTeX
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 Plantilla profesional para crear presentaciones corporativas en formato PDF usando LaTeX. Diseñada originalmente para JMSERVICIOS SPA.
 
 > **⚡ ¿Nuevo aquí?** Comienza con la [Guía de Inicio Rápido (5 minutos)](QUICK_START.md)
@@ -126,17 +130,19 @@ La plantilla incluye las siguientes secciones:
 
 ## 🤝 Contribuciones
 
-¡Las contribuciones son bienvenidas! Si tienes sugerencias o mejoras:
+¡Las contribuciones son bienvenidas! Lee nuestra [Guía de Contribución](CONTRIBUTING.md) para más detalles.
 
-1. Haz un fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/nueva-caracteristica`)
-3. Commit tus cambios (`git commit -m 'Agrega nueva característica'`)
-4. Push a la rama (`git push origin feature/nueva-caracteristica`)
-5. Abre un Pull Request
+**Formas de contribuir:**
+- 🐛 Reportar bugs y errores
+- 💡 Proponer nuevas características
+- 📝 Mejorar la documentación
+- 🎨 Crear nuevos temas y diseños
+- 🌍 Traducir a otros idiomas
+- ⭐ Dale una estrella al proyecto
 
 ## 📝 Licencia
 
-Este proyecto está disponible como plantilla de código abierto. Siéntete libre de usarlo y adaptarlo para tus propios proyectos.
+Este proyecto está bajo la Licencia MIT - ve el archivo [LICENSE](LICENSE) para más detalles.
 
 ## 💬 Soporte
 
