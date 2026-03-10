@@ -1,0 +1,585 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[paperwidth=21cm,paperheight=150cm,margin=0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{parskip}
+\usepackage{fontawesome5}
+\usetikzlibrary{positioning, shadows, calc}
+
+\pagestyle{empty}
+
+% Colores corporativos
+\definecolor{azulJM}{HTML}{284564}
+\definecolor{naranjaJM}{HTML}{F49D10}
+\definecolor{blancoJM}{HTML}{FFFFFF}
+\definecolor{grisClaro}{HTML}{F8F9FA}
+\definecolor{grisOscuro}{HTML}{2C3E50}
+\definecolor{grisSeccion}{HTML}{e8ebef}
+
+\begin{document}
+
+% ============================================================
+% SECCIÓN 1: PORTADA - Fondo AZUL EMPRESARIAL
+% ============================================================
+\colorbox{azulJM}{\parbox{21cm}{
+    \vspace{1cm}
+    
+    \begin{center}
+    \begin{tikzpicture}
+        \fill[blancoJM,rounded corners=15pt] (0,0) rectangle (18cm,24cm);
+        \fill[naranjaJM] (16cm,24cm) -- (18cm,24cm) -- (18cm,21cm) -- (16cm,21cm) -- cycle;
+    \end{tikzpicture}
+    \end{center}
+    
+    \vspace{-23cm}
+    
+    \begin{center}
+        \includegraphics[width=8cm]{public/images/general/logo.png}
+        
+        \vspace{1.5cm}
+        
+        {\fontsize{48}{52}\selectfont\color{azulJM}\textbf{JM SERVICIOS}}
+        
+        \vspace{0.8cm}
+        
+        {\fontsize{22}{26}\selectfont\color{naranjaJM}\textit{Construyendo Futuro, Moviendo Progreso}}
+        
+        \vspace{1.5cm}
+        
+        {\color{azulJM}\rule{8cm}{3pt}}
+        
+        \vspace{1cm}
+        
+        {\LARGE\color{azulJM}Más de \textbf{30 años} de experiencia}
+        
+        \vspace{0.4cm}
+        
+        {\LARGE\color{azulJM}Más de \textbf{200 proyectos} exitosos}
+    \end{center}
+    
+    \vspace{2cm}
+}}
+
+% ============================================================
+% SECCIÓN 2: SOBRE NOSOTROS - Fondo BLANCO
+% ============================================================
+\colorbox{blancoJM}{\parbox{21cm}{
+    \vspace{2cm}
+    
+    \begin{center}
+        {\fontsize{38}{42}\selectfont\color{azulJM}\textbf{Sobre Nosotros}}
+        
+        \vspace{0.5cm}
+        
+        {\color{naranjaJM}\rule{8cm}{3pt}}
+        
+        \vspace{1.5cm}
+        
+        \begin{minipage}{18cm}
+            {\Large\color{azulJM}\textbf{¿Quiénes somos?}}
+            
+            \vspace{0.5cm}
+            
+            {\large JMSERVICIOS SPA es una empresa líder en el norte de Chile con más de \textbf{tres décadas} de trayectoria, con amplia participación en proyectos habitacionales e industriales de gran envergadura.}
+        \end{minipage}
+        
+        \vspace{1.5cm}
+        
+        % Estadísticas
+        \begin{tikzpicture}
+            \fill[naranjaJM,opacity=0.1,rounded corners=12pt] (0,0) rectangle (8,3.5);
+            \node at (4,2.2) {\fontsize{48}{52}\selectfont\color{naranjaJM}\textbf{200+}};
+            \node at (4,0.8) {\Large\color{grisOscuro}Proyectos Finalizados};
+            
+            \fill[azulJM,opacity=0.1,rounded corners=12pt] (10,0) rectangle (18,3.5);
+            \node at (14,2.2) {\fontsize{48}{52}\selectfont\color{azulJM}\textbf{30+}};
+            \node at (14,0.8) {\Large\color{grisOscuro}Años de Experiencia};
+        \end{tikzpicture}
+        
+        \vspace{1.5cm}
+        
+        \begin{minipage}{18cm}
+            {\Large\color{naranjaJM}\textbf{Nuestra Misión}}
+            
+            \vspace{0.5cm}
+            
+            {\large Superar las expectativas de nuestros clientes con soluciones duraderas y seguras, manteniendo siempre la \textbf{seguridad ante todo} y el compromiso con el medio ambiente.}
+            
+            \vspace{1cm}
+            
+            \colorbox{grisClaro}{\parbox{17cm}{
+                \vspace{0.4cm}
+                \centering
+                \Large\textbf{Equipos de última generación • Profesionales calificados • Compromiso con la excelencia}
+                \vspace{0.4cm}
+            }}
+        \end{minipage}
+    \end{center}
+    
+    \vspace{2cm}
+}}
+
+% ============================================================
+% SECCIÓN 3: NUESTROS SERVICIOS - Fondo BLANCO
+% ============================================================
+\colorbox{blancoJM}{\parbox{21cm}{
+    {\color{azulJM}\rule{2cm}{1cm}}
+    
+    \vspace{0.8cm}
+    
+    \vspace{2cm}
+    
+    \begin{center}
+        {\fontsize{38}{42}\selectfont\color{azulJM}\textbf{Nuestros Servicios}}
+        
+        \vspace{0.5cm}
+        
+        {\color{naranjaJM}\rule{8cm}{3pt}}
+        
+        \vspace{0.3cm}
+        
+        {\Large\color{naranjaJM}Soluciones integrales para proyectos de alto impacto}
+        
+        \vspace{1.5cm}
+        
+        % Grid de servicios - 3 columnas por fila
+        \begin{minipage}{18cm}
+            % Fila 1
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faTractor\quad}{\Large\color{azulJM}\textbf{Movimiento de Tierras}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Excavaciones, nivelaciones y compactaciones de terreno para proyectos industriales y de infraestructura.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faTools\quad}{\Large\color{azulJM}\textbf{Demoliciones}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Demoliciones controladas y desmontaje de estructuras con altos estándares de seguridad.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faBuilding\quad}{\Large\color{azulJM}\textbf{Obras Civiles}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Construcción de infraestructura y desarrollo de obras civiles.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            
+            \vspace{0.8cm}
+            
+            % Fila 2
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faCubes\quad}{\Large\color{azulJM}\textbf{Suministro de Áridos}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Provisión de estabilizado, arena, grava y materiales pétreos para construcción.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faBorderAll\quad}{\Large\color{azulJM}\textbf{Cercos Perimetrales}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Instalación de cercos de seguridad y delimitación de áreas industriales.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faIndustry\quad}{\Large\color{azulJM}\textbf{Pisos Conductivos}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Instalación de pisos conductivos para entornos industriales y áreas técnicas.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            
+            \vspace{0.8cm}
+            
+            % Fila 3
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faSolarPanel\quad}{\Large\color{azulJM}\textbf{Paneles Solares}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Implementación de soluciones de generación de energía solar.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faRoad\quad}{\Large\color{azulJM}\textbf{Estabilización}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Mejoramiento de suelos y control de erosión en caminos y taludes.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faWarehouse\quad}{\Large\color{azulJM}\textbf{Instalaciones de Faena}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Diseño y construcción de instalaciones temporales para obras.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            
+            \vspace{0.8cm}
+            
+            % Fila 4
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faToilet\quad}{\Large\color{azulJM}\textbf{Soluciones Sanitarias}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Diseño e instalación de sistemas sanitarios.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faLightbulb\quad}{\Large\color{azulJM}\textbf{Iluminación}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Implementación de sistemas de iluminación para faenas e instalaciones industriales.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{blancoJM}{\parbox[t][4.5cm][t]{5.3cm}{
+                    \vspace{0.5cm}
+                    \centering
+                    {\color{naranjaJM}\faVideo\quad}{\Large\color{azulJM}\textbf{Sistemas de Cámaras}}
+                    
+                    \vspace{0.3cm}
+                    
+                    {\small Instalación de sistemas de vigilancia y monitoreo.}
+                    \vspace{0.5cm}
+                }}
+            \end{minipage}
+            
+            \vspace{1.5cm}
+            
+            \colorbox{naranjaJM!10}{\parbox{17cm}{
+                \vspace{0.5cm}
+                \centering
+                \Large\textbf{\color{naranjaJM}Certificaciones y Calidad} • \color{grisOscuro}Cumplimiento de normativas internacionales
+                \vspace{0.5cm}
+            }}
+        \end{minipage}
+    \end{center}
+    
+    \vspace{2cm}
+}}
+
+% ============================================================
+% SECCIÓN 4: GALERÍA DE PROYECTOS - Fondo BLANCO
+% ============================================================
+\colorbox{blancoJM}{\parbox{21cm}{
+    {\color{naranjaJM}\rule{2cm}{1cm}}
+    
+    \vspace{0.8cm}
+    
+    \vspace{2cm}
+    
+    \begin{center}
+        {\fontsize{38}{42}\selectfont\color{azulJM}\textbf{Galería de Proyectos}}
+        
+        \vspace{0.5cm}
+        
+        {\color{naranjaJM}\rule{8cm}{3pt}}
+        
+        \vspace{0.3cm}
+        
+        {\Large\color{naranjaJM}Algunos trabajos realizados}
+        
+        \vspace{1.5cm}
+        
+        % Grid de proyectos - 3 columnas x 2 filas
+        \begin{minipage}{18cm}
+            % Fila 1
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{grisClaro}{\parbox{5.3cm}{
+                    \vspace{0.3cm}
+                    \centering
+                    \includegraphics[width=5cm,height=4cm]{public/images/featured_projects/mall_la_portada/image69.jpg}
+                    
+                    \vspace{0.4cm}
+                    
+                    \parbox[t][1.2cm][t]{5cm}{\centering{\small\color{azulJM}Excavación masiva y preparación de terreno}}
+                    \vspace{0.3cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{grisClaro}{\parbox{5.3cm}{
+                    \vspace{0.3cm}
+                    \centering
+                    \includegraphics[width=5cm,height=4cm]{public/images/featured_projects/balneario_municipal_antofagasta/image19.png}
+                    
+                    \vspace{0.4cm}
+                    
+                    \parbox[t][1.2cm][t]{5cm}{\centering{\small\color{azulJM}Transporte de carguío y roca}}
+                    \vspace{0.3cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{grisClaro}{\parbox{5.3cm}{
+                    \vspace{0.3cm}
+                    \centering
+                    \includegraphics[width=5cm,height=4cm]{public/images/featured_projects/otros/sanitaria.jpg}
+                    
+                    \vspace{0.4cm}
+                    
+                    \parbox[t][1.2cm][t]{5cm}{\centering{\small\color{azulJM}Diseño e instalación de obras sanitarias}}
+                    \vspace{0.3cm}
+                }}
+            \end{minipage}
+            
+            \vspace{1cm}
+            
+            % Fila 2
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{grisClaro}{\parbox{5.3cm}{
+                    \vspace{0.3cm}
+                    \centering
+                    \includegraphics[width=5cm,height=4cm]{public/images/featured_projects/otros/piso_conductivo4.png}
+                    
+                    \vspace{0.4cm}
+                    
+                    \parbox[t][1.2cm][t]{5cm}{\centering{\small\color{azulJM}Instalación de pisos electro-conductivos}}
+                    \vspace{0.3cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{grisClaro}{\parbox{5.3cm}{
+                    \vspace{0.3cm}
+                    \centering
+                    \includegraphics[width=5cm,height=4cm]{public/images/featured_projects/otros/cerco_perimetral3.png}
+                    
+                    \vspace{0.4cm}
+                    
+                    \parbox[t][1.2cm][t]{5cm}{\centering{\small\color{azulJM}Instalación de cercos perimetrales}}
+                    \vspace{0.3cm}
+                }}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{5.5cm}
+                \colorbox{grisClaro}{\parbox{5.3cm}{
+                    \vspace{0.3cm}
+                    \centering
+                    \includegraphics[width=5cm,height=4cm]{public/images/featured_projects/otros/instalacion_solar.png}
+                    
+                    \vspace{0.4cm}
+                    
+                    \parbox[t][1.2cm][t]{5cm}{\centering{\small\color{azulJM}Instalación de sistema de paneles solares}}
+                    \vspace{0.3cm}
+                }}
+            \end{minipage}
+            
+            \vspace{1.5cm}
+            
+            {\Large\color{naranjaJM}Ver más trabajos en: \textbf{www.jm-servicios.cl}}
+        \end{minipage}
+    \end{center}
+    
+    \vspace{2cm}
+}}
+
+% ============================================================
+% SECCIÓN 5: CONFÍAN EN NOSOTROS - Fondo BLANCO
+% ============================================================
+\colorbox{blancoJM}{\parbox{21cm}{
+    {\color{azulJM}\rule{2cm}{1cm}}
+    
+    \vspace{0.8cm}
+    
+    \vspace{2cm}
+    
+    \begin{center}
+        {\fontsize{38}{42}\selectfont\color{azulJM}\textbf{Confían en Nosotros}}
+        
+        \vspace{0.5cm}
+        
+        {\color{naranjaJM}\rule{8cm}{3pt}}
+        
+        \vspace{0.3cm}
+        
+        {\Large\color{naranjaJM}Grandes clientes que confiaron en nosotros}
+        
+        \vspace{2cm}
+        
+        \begin{minipage}{18cm}
+            \centering
+            
+            % Fila 1: 3 logos centrados con igual espaciado
+            \begin{minipage}[c]{5cm}
+                \centering
+                \includegraphics[height=2cm,keepaspectratio]{public/images/empresas/fcab.jpg}
+            \end{minipage}\hspace{1cm}%
+            \begin{minipage}[c]{5cm}
+                \centering
+                \includegraphics[height=2cm,keepaspectratio]{public/images/empresas/alma.png}
+            \end{minipage}\hspace{1cm}%
+            \begin{minipage}[c]{5cm}
+                \centering
+                \includegraphics[height=2cm,keepaspectratio]{public/images/empresas/mall.png}
+            \end{minipage}
+            
+            \vspace{1.5cm}
+            
+            % Fila 2: 2 logos centrados
+            \begin{minipage}[c]{5cm}
+                \centering
+                \includegraphics[height=2cm,keepaspectratio]{public/images/empresas/orica.png}
+            \end{minipage}\hspace{1cm}%
+            \begin{minipage}[c]{5cm}
+                \centering
+                \includegraphics[height=2cm,keepaspectratio]{public/images/empresas/ua.png}
+            \end{minipage}
+        \end{minipage}
+    \end{center}
+    
+    \vspace{2cm}
+}}
+
+\par\nointerlineskip
+\vspace*{-0.8pt}
+
+% ============================================================
+% SECCIÓN 6: HABLEMOS DE SU PROYECTO - Fondo AZUL EMPRESARIAL (Invertido)
+% ============================================================
+
+% Quitar padding interno de colorbox SOLO aquí
+{\setlength{\fboxsep}{0pt}%
+\colorbox{azulJM}{\parbox[t]{21cm}{%
+    % Arrancar pegado arriba (sin espacios fantasma)
+    \noindent
+
+    % Card blanco (SIN center para no meter padding vertical)
+    \hspace*{1.5cm}%
+    \begin{tikzpicture}
+        % Card blanco: esquinas superiores rectas, inferiores redondeadas
+        \fill[blancoJM]
+            (0,24cm) -- (18cm,24cm) -- (18cm,15pt)
+            arc[start angle=0,end angle=-90,radius=15pt] -- (15pt,0cm)
+            arc[start angle=-90,end angle=-180,radius=15pt] -- (0cm,24cm) -- cycle;
+        \fill[naranjaJM] (16cm,0cm) -- (18cm,0cm) -- (18cm,3cm) -- (16cm,3cm) -- cycle;
+    \end{tikzpicture}
+
+    % Subimos contenido encima del card
+    \vspace*{-23cm}
+
+    \begin{center}
+        {\fontsize{42}{46}\selectfont\color{azulJM}\textbf{Hablemos de su Proyecto}}
+
+        \vspace{0.5cm}
+
+        {\color{naranjaJM}\rule{8cm}{3pt}}
+
+        \vspace{0.8cm}
+
+        {\LARGE\color{azulJM}\textit{Estamos listos para ayudarlo a alcanzar sus objetivos}}
+
+        \vspace{1.5cm}
+
+        \begin{minipage}{16cm}
+            \centering
+
+            {\LARGE\color{naranjaJM}\textbf{Teléfono}}
+
+            \vspace{0.3cm}
+
+            {\fontsize{28}{32}\selectfont\color{azulJM}+56 9 6908 1474}
+
+            \vspace{1.2cm}
+
+            {\LARGE\color{naranjaJM}\textbf{Email}}
+
+            \vspace{0.3cm}
+
+            {\fontsize{22}{26}\selectfont\color{azulJM}jm\_servicios\_afta@yahoo.es}
+
+            \vspace{1.2cm}
+
+            {\LARGE\color{naranjaJM}\textbf{Sitio Web}}
+
+            \vspace{0.3cm}
+
+            {\fontsize{28}{32}\selectfont\color{azulJM}www.jm-servicios.cl}
+        \end{minipage}
+
+        \vspace{1.5cm}
+
+        \includegraphics[width=6cm]{public/images/general/logo.png}
+
+        \vspace{0.8cm}
+
+        {\Large\color{azulJM}\textit{Construyendo Futuro, Moviendo Progreso}}
+
+        \vspace{0.4cm}
+
+        {\large\color{azulJM}Antofagasta, Chile}
+    \end{center}
+
+    \vspace*{3cm}
+}}%
+} % <-- fin del grupo con fboxsep=0
+
+\end{document}

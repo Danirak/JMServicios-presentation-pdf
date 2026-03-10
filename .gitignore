@@ -1,0 +1,42 @@
+# Archivos compilados de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.dvi
+*.ps
+
+# Archivos temporales
+*~
+*.swp
+*.swo
+*.bak
+*.backup
+
+# Directorios de build
+_minted-*/
+build/
+dist/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
