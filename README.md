@@ -2,6 +2,8 @@
 
 Plantilla profesional para crear presentaciones corporativas en formato PDF usando LaTeX. Diseñada originalmente para JMSERVICIOS SPA.
 
+> **⚡ ¿Nuevo aquí?** Comienza con la [Guía de Inicio Rápido (5 minutos)](QUICK_START.md)
+
 ## ✨ Características
 
 - 🎨 **Diseño profesional y moderno** con colores personalizables
@@ -21,7 +23,8 @@ Plantilla profesional para crear presentaciones corporativas en formato PDF usan
 │       └── general/
 │           └── logo.png            # Logo de la empresa
 ├── README.md                       # Este archivo
-└── CUSTOMIZATION_GUIDE.md          # Guía de personalización
+├── QUICK_START.md                  # Guía de inicio rápido (5 min)
+└── CUSTOMIZATION_GUIDE.md          # Guía de personalización detallada
 ```
 
 ## 🚀 Instalación y Uso Rápido
